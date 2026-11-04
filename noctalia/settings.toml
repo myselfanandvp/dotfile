@@ -1,4 +1,4 @@
-config_version = 15
+config_version = 16
 
 [audio]
 enable_sounds = true
@@ -55,7 +55,7 @@ icon_size = 20
 inactive_scale = 1.0
 launcher_position = "start"
 margin_edge = 1
-pinned = [ "kitty", "brave-browser" ]
+pinned = [ "kitty" ]
 radius = 10
 radius_bottom_left = 5
 radius_bottom_right = 5
@@ -112,7 +112,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -139,7 +139,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -199,7 +199,7 @@ polkit_agent = true
 builtin = "Ayu"
 community_palette = "Tokyo Night Storm"
 mode = "dark"
-source = "builtin"
+source = "wallpaper"
 wallpaper_scheme = "muted"
 
     [theme.templates]

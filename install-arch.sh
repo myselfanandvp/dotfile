@@ -41,7 +41,7 @@ error() {
 if [[ ! -d "$DOTFILES" ]]; then
   info "Dotfiles directory not found. Cloning repository..."
 
-  git clone https://github.com/myselfanandvp/dotfile.git"$DOTFILES"
+  git clone https://github.com/myselfanandvp/dotfile.git "$DOTFILES"
   git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
@@ -318,7 +318,7 @@ backup_if_exists() {
 
 backup_if_exists "$HOME/.config/fish" "fish"
 backup_if_exists "$HOME/.config/hypr" "hypr"
-backup_if_exists "$HOME/.local/state/noctalia/setttings.toml" "noctalia_settings"
+backup_if_exists "$HOME/.local/state/noctalia/settings.toml" "noctalia_settings"
 backup_if_exists "$HOME/.bashrc" "bashrc"
 backup_if_exists "$HOME/.zshrc" "zshrc"
 backup_if_exists "$HOME/.tmux.conf" "tmux.conf"
@@ -388,10 +388,24 @@ sudo install -Dm644 \
 
 info "Applying noctalia configuration"
 
-sudo cp -a "$DOTFILES/noctalia/settings.toml" \
-  $HOME/.local/state/noctalia/settings.toml
+NOCTALIA_DIR="$HOME/.local/state/noctalia"
+TARGET_SETTINGS="$NOCTALIA_DIR/settings.toml"
+SOURCE_SETTINGS="$DOTFILES/noctalia/settings.toml"
 
-success "noctalia configuration linked"
+if [[ -f "$SOURCE_SETTINGS" ]]; then
+  mkdir -p "$NOCTALIA_DIR"
+
+  # Remove existing target file or broken symlink if present
+  if [[ -L "$TARGET_SETTINGS" || -f "$TARGET_SETTINGS" ]]; then
+    rm -f "$TARGET_SETTINGS"
+  fi
+
+  ln -s "$SOURCE_SETTINGS" "$TARGET_SETTINGS"
+
+  success "Noctalia configuration symlinked"
+else
+  warning "Noctalia settings file not found in dotfiles"
+fi
 
 progress
 
@@ -513,7 +527,6 @@ fi
 info "Configuring Plymouth and Snapshots"
 
 if command -v plymouth-set-default-theme &>/dev/null; then
-  # Check if the current theme is already 'spinner'
   CURRENT_PLYMOUTH_THEME="$(plymouth-set-default-theme)"
   if [[ "$CURRENT_PLYMOUTH_THEME" != "spinner" ]]; then
     sudo plymouth-set-default-theme spinner -R
@@ -523,12 +536,10 @@ if command -v plymouth-set-default-theme &>/dev/null; then
   fi
 fi
 
-# Helper function to check if a systemd service/timer is enabled
 is_enabled() {
   systemctl is-enabled --quiet "$1" 2>/dev/null
 }
 
-# Snapper
 if findmnt -n -o FSTYPE / | grep -qx "btrfs"; then
 
   if ! command -v snapper &>/dev/null; then
