@@ -41,8 +41,6 @@ obs-studio
 papirus-icon-theme
 plymouth
 python
-qt5
-qt6ct
 ruff
 slurp
 starship

@@ -4,3 +4,4 @@ limine-snapper-sync
 limine-mkinitcpio-hook
 qt6ct
 nil-git
+qt6ct-kde
