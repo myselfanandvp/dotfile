@@ -3,3 +3,4 @@ topgrade
 limine-snapper-sync
 limine-mkinitcpio-hook
 qt6ct
+nil-git

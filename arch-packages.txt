@@ -35,7 +35,6 @@ mpv
 thunar
 gvfs
 neovim
-niri
 sddm
 nwg-look
 obs-studio
@@ -69,11 +68,8 @@ ty
 lazydocker
 base-devel
 debugedit
-thunderbird
-xdg-desktop-portal
-xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
-xwayland-satellite
 nodejs-lts-krypton
 python-setuptools
 btrfs-assistant
@@ -98,3 +94,4 @@ zsh-autocomplete
 zsh-autosuggestions
 fwupd
 hyprshot
+hyprpicker
