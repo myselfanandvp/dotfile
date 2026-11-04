@@ -2,11 +2,8 @@ networkmanager
 bluez
 bluez-utils
 loupe
-imagemagick
 brightnessctl
 btop
-chafa
-chrony
 curl
 dialog
 docker
@@ -14,16 +11,15 @@ docker-compose
 eza
 fastfetch
 fd
-firewalld
 fish
-flatpak
+ufw
 fzf
 gcc
 github-cli
 ghostty
+wezterm
 git
 gnome-sound-recorder
-go
 grim
 gvfs
 gvfs-mtp
@@ -32,7 +28,7 @@ kitty
 lua
 make
 mpv
-thunar
+nautilus
 gvfs
 neovim
 sddm
@@ -71,7 +67,6 @@ xdg-desktop-portal-hyprland
 nodejs-lts-krypton
 python-setuptools
 btrfs-assistant
-cmake
 tomlplusplus
 readline
 hyprwire
@@ -84,7 +79,8 @@ fd
 adw-gtk-theme
 nwg-look
 qt6-multimedia
-fuzzel
+qt6ct
+qt5ct
 imagemagick
 ghostscript
 poppler

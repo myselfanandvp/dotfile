@@ -3,4 +3,3 @@ topgrade-bin
 limine-snapper-sync
 limine-mkinitcpio-hook
 nil-git
-qt6ct-kde

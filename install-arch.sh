@@ -199,7 +199,7 @@ else
 
   TEMP_DIR="$(mktemp -d)"
 
-  if git clone https://aur.archlinux.org/yay-bin.git  "$TEMP_DIR/yay"; then
+  if git clone https://aur.archlinux.org/yay-bin.git "$TEMP_DIR/yay"; then
     (
       cd "$TEMP_DIR/yay" || exit 1
       makepkg -si --noconfirm
@@ -242,39 +242,7 @@ if [[ -f "$AUR_PACKAGES" ]]; then
   success "AUR packages installed"
 fi
 
-# --------------------------------------------------
-# Flatpak
-# --------------------------------------------------
-
-info "Setting up Flatpak"
-
-sudo pacman -S --needed --noconfirm flatpak
-
-sudo flatpak remote-add \
-  --if-not-exists \
-  flathub \
-  https://dl.flathub.org/repo/flathub.flatpakrepo
-
-success "Flathub configured"
-
-info "Installing Flatpak applications"
-
-FLATPAK_APPS=(
-  "app.zen_browser.zen"
-)
-
-for app in "${FLATPAK_APPS[@]}"; do
-  if flatpak info "$app" &>/dev/null; then
-    success "$app already installed"
-  else
-    flatpak install -y flathub "$app"
-  fi
-done
-
-success "Flatpak applications installed"
-
 progress
-
 
 # --------------------------------------------------
 # Fonts
@@ -415,12 +383,15 @@ sudo install -Dm644 \
   /etc/keyd/default.conf
 
 # --------------------------------------------------
-# Local configuration
+# Noctalia configuration
 # --------------------------------------------------
 
-info "Applying local configuration"
+info "Applying noctalia configuration"
 
-cd "$DOTFILES"
+sudo cp -a "$DOTFILES/noctalia/settings.toml" \
+  $HOME/.local/state/noctalia/settings.toml
+
+success "noctalia configuration linked"
 
 progress
 
