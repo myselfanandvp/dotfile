@@ -40,3 +40,5 @@ hl.permission({
 	type = "screencopy",
 	mode = "allow",
 })
+
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")

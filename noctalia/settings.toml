@@ -55,7 +55,7 @@ icon_size = 20
 inactive_scale = 1.0
 launcher_position = "start"
 margin_edge = 1
-pinned = [ "kitty" ]
+pinned = [ "kitty", "brave-browser", "firefox" ]
 radius = 10
 radius_bottom_left = 5
 radius_bottom_right = 5
@@ -195,8 +195,11 @@ polkit_agent = true
     transparency_mode = "soft"
     wallpaper_placement = "floating"
 
+[system.monitor]
+gpu_poll_seconds = 1
+
 [theme]
-builtin = "Ayu"
+builtin = "Noctalia"
 community_palette = "Tokyo Night Storm"
 mode = "dark"
 source = "builtin"
