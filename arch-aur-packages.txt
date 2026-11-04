@@ -1,5 +1,5 @@
 noctalia
-topgrade
+topgrade-bin
 limine-snapper-sync
 limine-mkinitcpio-hook
 nil-git
