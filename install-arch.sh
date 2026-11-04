@@ -454,10 +454,6 @@ info "Applying local configuration"
 
 cd "$DOTFILES"
 
-stow local
-
-success "Local configuration linked"
-
 progress
 
 # --------------------------------------------------
