@@ -1,0 +1,6 @@
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono
+ttf-cascadia-code
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols-mono

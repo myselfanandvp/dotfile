@@ -1,0 +1,8 @@
+custom-shader = ./cursor_warp.glsl
+background-opacity = 0.95
+confirm-close-surface = false
+adjust-cursor-thickness = 50%
+font-family = JetBrains Mono
+font-size = 13
+# ...
+theme = noctalia

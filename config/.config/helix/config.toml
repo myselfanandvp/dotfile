@@ -1,0 +1,37 @@
+theme = "noctalia"
+
+[editor]
+scrolloff = 999
+line-number = "relative"
+cursorline = true
+continue-comments = false
+auto-completion = true
+path-completion = true
+idle-timeout = 400
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+git-ignore = true
+
+[editor.indent-guides]
+render = true
+character = "|"
+
+[keys.normal]
+"}"="goto_next_paragraph"
+"{"="goto_prev_paragraph"
+
+C-y = [
+    ':sh rm -f /tmp/unique-file',
+    ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
+    ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+    ':open %sh{cat /tmp/unique-file}',
+    ':redraw',
+    ':set mouse false',
+    ':set mouse true'
+]   

@@ -1,0 +1,15 @@
+{
+  "name": "my-helix-global-tools",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@dprint/dockerfile": "0.5.0",
+    "@dprint/formatter": "0.5.1",
+    "@microsoft/compose-language-service": "0.5.0",
+    "dockerfile-language-server-nodejs": "0.15.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "typescript-language-server": "5.3.0",
+    "yaml-language-server": "1.24.0"
+  }
+}

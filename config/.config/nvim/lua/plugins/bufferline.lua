@@ -1,0 +1,25 @@
+-- return {
+--   {
+--     "nvim-neo-tree/neo-tree.nvim",
+--     opts = {
+--       filesystem = {
+--         hijack_netrw_behavior = "disabled",
+--         follow_current_file = {
+--           enabled = false,
+--         },
+--       },
+--
+--       buffers = {
+--         follow_current_file = {
+--           enabled = false,
+--         },
+--       },
+--     },
+--   },
+--
+--   {
+--     "akinsho/bufferline.nvim",
+--     enabled = false,
+--   },
+-- }
+return {}

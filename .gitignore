@@ -1,0 +1,35 @@
+*.setup-complete
+*community-palettes*
+*community-templates*
+*notification_history.json
+__pycache__
+*recently_used.json
+*state.toml
+*usage_counts.json
+runtime/
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+*notification_history_assets*
+*package.toml*
+
+# Ignore everything inside state, but track settings.toml
+local/.local/state/*
+!local/.local/state/noctalia/settings.toml
+
+# Ignore contents of config subfolders (add any !exceptions below if needed)
+config/.config/yazi/plugins/*
+config/.config/yazi/flavors/noctalia.yazi/*
+config/.config/qutebrowser/bookmarks/*
+config/.config/qutebrowser/greasemonkey/*
+config/.config/qutebrowser/src/*
+config/.config/qutebrowser/quickmarks/*
+config/.config/qutebrowser/theme/__pycache__/*
+config/.config/systemd/user/*
+config/.config/fish/conf.d/fish_frozen_key_bindings*
+config/.config/herdr/session.json

@@ -1,0 +1,25 @@
+[general]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
+
+[window]
+opacity = 0.9
+
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrains Mono NL"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono NL"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono NL"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono NL"
+style = "Bold Italic"
