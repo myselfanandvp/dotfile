@@ -281,17 +281,17 @@ progress
 
 info "Setting up Hyprpm"
 
-if command -v hyprpm &>/dev/null; then
-  success "hyprpm is installed"
-else
+if ! command -v hyprpm &>/dev/null; then
   sudo pacman -S --needed --noconfirm hyprpm
-  success "hyprpm installed"
 fi
 
 if command -v hyprpm &>/dev/null; then
-  info "Updating Hyprpm plugins"
+  success "hyprpm is installed"
 
-  # Add the official Hyprland plugins repository only if it doesn't exist
+  info "Updating Hyprland headers"
+  hyprpm update
+
+  # Add the official Hyprland plugins repository only if missing
   if hyprpm list 2>/dev/null | grep -q "hyprland-plugins"; then
     info "Hyprland plugins repository already added"
   else
@@ -299,8 +299,11 @@ if command -v hyprpm &>/dev/null; then
     hyprpm add https://github.com/hyprwm/hyprland-plugins
   fi
 
-  # Update existing plugins and reload them
+  # Update plugins and reload them
+  info "Updating Hyprpm plugins"
   hyprpm update
+
+  info "Reloading Hyprpm plugins"
   hyprpm reload
 
   success "Hyprpm plugins updated and reloaded"
