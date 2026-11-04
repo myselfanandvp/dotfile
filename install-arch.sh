@@ -199,7 +199,7 @@ else
 
   TEMP_DIR="$(mktemp -d)"
 
-  if git clone https://aur.archlinux.org/yay.git "$TEMP_DIR/yay"; then
+  if git clone https://aur.archlinux.org/yay-bin.git  "$TEMP_DIR/yay"; then
     (
       cd "$TEMP_DIR/yay" || exit 1
       makepkg -si --noconfirm
