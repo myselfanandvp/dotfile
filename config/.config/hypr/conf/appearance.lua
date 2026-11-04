@@ -23,9 +23,9 @@ hl.config({
 	},
 
 	general = {
-		gaps_in = 4,
-		gaps_out = 6,
-		border_size = 2,
+		gaps_in = 2,
+		gaps_out = 3,
+		border_size = 1,
 
 		col = {
 			active_border = "rgba(ffffffff)",
@@ -43,7 +43,7 @@ hl.config({
 
 	decoration = {
 		-- Cleaned up zero-rounding properties
-		rounding = 8,
+		rounding = 0,
 
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
@@ -74,6 +74,17 @@ hl.config({
 			offset = { 0, 0 },
 			scale = 1.0,
 			sharp = false,
+		},
+
+		wobble = {
+			enabled = true,
+			mesh = 12,
+			stiffness = 300,
+			mass = 1,
+			intensity = 0.2,
+			damping = 12,
+			value_epsilon = 0.50,
+			velocity_epsilon = 2,
 		},
 	},
 

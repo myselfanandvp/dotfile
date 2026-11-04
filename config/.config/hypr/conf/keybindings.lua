@@ -6,15 +6,13 @@
 
 local mainMod = "SUPER"
 local ipc = "noctalia msg"
-local colorPicker = "~/.config/hypr/conf/scripts/hyprpicker.sh"
+local colorPicker = "~/.config/hypr/scripts/hyprpicker.sh"
 local terminal = "kitty"
 local terminal2 = "wezterm"
 
 local fileManager = "nautilus"
 
 local terminal_fileManager = "yazi"
-
-local menu = "~/.config/hypr/scripts/toggle_rofi.sh"
 
 local browser = "google-chrome-stable"
 
@@ -43,15 +41,11 @@ end)
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("~/Dotfiles/config/.config/hypr/conf/scripts/hyprmag.sh"))
-
 hl.bind("ALT + RETURN", hl.dsp.exec_cmd(terminal2))
 
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(colorPicker))
 
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd(browser))
-
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 
 hl.bind(mainMod .. " + ALT + E", hl.dsp.exec_cmd(fileManager))
 
@@ -63,13 +57,13 @@ hl.bind(mainMod .. " + Y", hl.dsp.exec_cmd(terminal .. " -e " .. terminal_fileMa
 
 hl.bind(mainMod .. " + CTRL + M", hl.dsp.exec_cmd(mail))
 
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("~/.config/hypr/conf/scripts/kitty_toggle.sh"))
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("~/.config/hypr/scripts/kitty_toggle.sh"))
 
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("~/.config/hypr/conf/scripts/btop_toggle.sh"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("~/.config/hypr/scripts/btop_toggle.sh"))
 
 hl.bind(mainMod .. " + ALT + B", hl.dsp.exec_cmd("google-chrome-stable --incognito"))
 
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("~/.config/hypr/conf/scripts/yazi.sh"))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("~/.config/hypr/scripts/yazi.sh"))
 
 --    ╭────────────────────────────╮
 --    │     WINDOW MANAGEMENT      │
@@ -162,8 +156,6 @@ end)
 hl.bind(mainMod .. "+ALT + S", hl.dsp.workspace.toggle_special("magic"))
 
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
-
-hl.bind("ALT + W", hl.dsp.workspace.toggle_special("workfolio"))
 
 hl.bind("ALT + M", hl.dsp.workspace.toggle_special("spotify"))
 
@@ -279,6 +271,7 @@ hl.bind(mainMod .. "+period", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher /em
 hl.bind(mainMod .. "+X", hl.dsp.exec_cmd(ipc .. " panel-toggle session"))
 hl.bind(mainMod .. "+W", hl.dsp.exec_cmd(ipc .. " panel-toggle wallpaper"))
 hl.bind(mainMod .. " +ALT+L", hl.dsp.exec_cmd(ipc .. " session lock"))
+hl.bind(mainMod .. "+semicolon", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher /emo"))
 
 --  ─────────── Media keys ───────────
 

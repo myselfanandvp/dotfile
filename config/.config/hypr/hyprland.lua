@@ -10,7 +10,6 @@
 
 require("conf.monitors")
 require("conf.autostart")
-require("conf.environment")
 require("conf.input")
 require("conf.appearance")
 require("conf.keybindings")

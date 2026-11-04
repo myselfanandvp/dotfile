@@ -199,26 +199,11 @@ polkit_agent = true
 builtin = "Ayu"
 community_palette = "Tokyo Night Storm"
 mode = "dark"
-source = "wallpaper"
+source = "builtin"
 wallpaper_scheme = "muted"
 
     [theme.templates]
-    builtin_ids = [
-        "alacritty",
-        "btop",
-        "gtk3",
-        "gtk4",
-        "ghostty",
-        "helix",
-        "hyprland",
-        "kcolorscheme",
-        "kitty",
-        "mango",
-        "niri",
-        "qt",
-        "starship",
-        "wezterm"
-    ]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "wezterm" ]
     community_ids = [ "telegram", "fastfetch", "zathura", "papirus-icons", "herdr", "yazi" ]
 
 [wallpaper]
@@ -230,16 +215,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/roronoa-zoro-loyalty-over-everything-anime-desktop-wallpaper-variant_1k_1.jpg"
+    path = "/home/anand/Pictures/Wallpapers/marvel-deadpool-epic-action-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/roronoa-zoro-loyalty-over-everything-anime-desktop-wallpaper-variant_1k_1.jpg"
+    path = "/home/anand/Pictures/Wallpapers/marvel-deadpool-epic-action-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/roronoa-zoro-loyalty-over-everything-anime-desktop-wallpaper-variant_1k_1.jpg"
+    path = "/home/anand/Pictures/Wallpapers/marvel-deadpool-epic-action-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/roronoa-zoro-loyalty-over-everything-anime-desktop-wallpaper-variant_1k_1.jpg"
+    path = "/home/anand/Pictures/Wallpapers/marvel-deadpool-epic-action-desktop-wallpaper-variant_1k.jpg"
 
 [widget.audio_visualizer]
 color = "secondary"

@@ -16,10 +16,6 @@ hl.workspace_rule({
 --    ╰──────────────────────────────────────╯
 
 hl.workspace_rule({
-	workspace = "special:workfolio",
-	persistent = true,
-})
-hl.workspace_rule({
 	workspace = "special:spotify",
 	persistent = true,
 })
