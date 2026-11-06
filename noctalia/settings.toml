@@ -39,14 +39,30 @@ sync_all_monitors = true
 
 [desktop_widgets]
 schema_version = 2
-widget_order = []
+widget_order = [ "desktop-widget-0000000000000001" ]
 
     [desktop_widgets.grid]
     cell_size = 24
     major_interval = 4
     visible = true
 
-    [desktop_widgets.widget]
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 192.0
+    box_width = 312.0
+    cx = 1680.0
+    cy = 900.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        background_color = "on_primary"
+        color = "on_surface_variant"
+        font_family = "JetBrains Mono"
+        show_forecast = true
 
 [dock]
 border_width = 1.5
@@ -55,7 +71,7 @@ icon_size = 20
 inactive_scale = 1.0
 launcher_position = "start"
 margin_edge = 1
-pinned = [ "kitty", "brave-browser", "firefox" ]
+pinned = [ "kitty", "brave-browser" ]
 radius = 10
 radius_bottom_left = 5
 radius_bottom_right = 5
@@ -178,7 +194,7 @@ panel_placement = "floating"
 panel_position = "center"
 
 [plugins]
-enabled = [ "noctalia/notes" ]
+enabled = [ "noctalia/notes", "jinliu/imagemagick-clock" ]
 
 [shell]
 font_family = "JetBrains Mono SemiBold"
@@ -187,27 +203,26 @@ polkit_agent = true
     [shell.launcher]
     categories = false
     layout = "simple"
-    pinned = [ "zen", "com.mitchellh.ghostty", "brave-browser" ]
 
     [shell.panel]
-    control_center_placement = "floating"
     session_placement = "floating"
     transparency_mode = "soft"
     wallpaper_placement = "floating"
+    wallpaper_position = "center"
 
 [system.monitor]
 gpu_poll_seconds = 1
 
 [theme]
 builtin = "Kanagawa"
-community_palette = "Tokyo Night Storm"
+community_palette = "Catppuccin Macchiato Sapphire"
 mode = "dark"
 source = "community"
 wallpaper_scheme = "muted"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "wezterm" ]
-    community_ids = [ "telegram", "fastfetch", "zathura", "papirus-icons", "herdr", "yazi" ]
+    community_ids = [ "brave", "qutebrowser", "zen-browser", "telegram", "fastfetch", "zathura", "papirus-icons", "herdr", "yazi" ]
 
 [wallpaper]
 directory = "/home/anand/Pictures/Wallpapers"
@@ -218,16 +233,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
 
 [widget.audio_visualizer]
 color = "secondary"
