@@ -216,11 +216,11 @@ polkit_agent = true
 gpu_poll_seconds = 1
 
 [theme]
-builtin = "Kanagawa"
+builtin = "Noctalia"
 community_palette = "Catppuccin Mocha Blue"
 mode = "dark"
 source = "builtin"
-wallpaper_scheme = "m3-content"
+wallpaper_scheme = "faithful"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "wezterm" ]
@@ -235,16 +235,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
 
 [widget.audio_visualizer]
 color = "secondary"

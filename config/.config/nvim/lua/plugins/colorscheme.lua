@@ -5,7 +5,7 @@ return {
   opts = {}, -- see Config; lazy.nvim passes this to setup()
   config = function(_, opts)
     require("tokyoppuccin").setup(opts)
-    vim.cmd.colorscheme("tokyoppuccin")
+    vim.cmd.colorscheme("tokyoppuccin-storm")
   end,
 }
 
@@ -27,4 +27,3 @@ return {
 --     },
 --   },
 -- }
--- return { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
