@@ -149,10 +149,6 @@ end
 --    │     SPECIAL WORKSPACE      │
 --    ╰────────────────────────────╯
 
-hl.bind("SUPER + D", function()
-	hl.plugin.hyprexpo.expo("toggle")
-end)
-
 hl.bind(mainMod .. "+ALT + S", hl.dsp.workspace.toggle_special("magic"))
 
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))

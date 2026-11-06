@@ -202,7 +202,7 @@ gpu_poll_seconds = 1
 builtin = "Kanagawa"
 community_palette = "Tokyo Night Storm"
 mode = "dark"
-source = "builtin"
+source = "community"
 wallpaper_scheme = "muted"
 
     [theme.templates]
@@ -218,16 +218,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
 [widget.audio_visualizer]
 color = "secondary"
