@@ -47,10 +47,10 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000001]
-    box_height = 192.0
-    box_width = 312.0
-    cx = 1680.0
-    cy = 900.0
+    box_height = 336.0
+    box_width = 432.0
+    cx = 1632.0
+    cy = 852.0
     output = "eDP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -60,8 +60,10 @@ widget_order = [ "desktop-widget-0000000000000001" ]
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
         background = false
         background_color = "on_primary"
-        color = "on_surface_variant"
+        color = "primary"
         font_family = "JetBrains Mono"
+        forecast_days = 2
+        shadow = false
         show_forecast = true
 
 [dock]
@@ -215,10 +217,10 @@ gpu_poll_seconds = 1
 
 [theme]
 builtin = "Kanagawa"
-community_palette = "Catppuccin Macchiato Sapphire"
+community_palette = "Catppuccin Mocha Blue"
 mode = "dark"
-source = "community"
-wallpaper_scheme = "muted"
+source = "builtin"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "wezterm" ]
@@ -233,16 +235,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/desert-meets-ocean-surreal-landscape-aerial-view-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/massive-ocean-waves-crashing-on-cliffs-stormy-sky-desktop-wallpaper-variant_1k.jpg"
 
 [widget.audio_visualizer]
 color = "secondary"

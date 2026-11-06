@@ -11,52 +11,52 @@
 # - Outline colors for borders and separators
 
 # Base Surface Colors
-surface = "#24273a"
-surface_dim = "#1c1f2d"
-surface_bright = "#4f5573"
-surface_container = "#363a4f"
-surface_container_low = "#2d3044"
-surface_container_lowest = "#272a3e"
-surface_container_high = "#3e435b"
-surface_container_highest = "#474c67"
-surface_variant = "#363a4f"
+surface = "#1f1f28"
+surface_dim = "#16161d"
+surface_bright = "#44445a"
+surface_container = "#2a2a37"
+surface_container_low = "#24242f"
+surface_container_lowest = "#21212b"
+surface_container_high = "#333343"
+surface_container_highest = "#3c3c4e"
+surface_variant = "#2a2a37"
 
 # Foreground Colors
-on_surface = "#cad3f5"
-on_surface_variant = "#a5adcb"
+on_surface = "#c8c093"
+on_surface_variant = "#717c7c"
 
 # Primary Colors
-primary = "#7dc4e4"
-on_primary = "#24273a"
-primary_container = "#3e566d"
-on_primary_container = "#89d1f1"
+primary = "#76946a"
+on_primary = "#1f1f28"
+primary_container = "#39423b"
+on_primary_container = "#94b488"
 
 # Secondary Colors
-secondary = "#8aadf4"
-on_secondary = "#24273a"
-secondary_container = "#424f71"
-on_secondary_container = "#a3c2ff"
+secondary = "#c0a36e"
+on_secondary = "#1f1f28"
+secondary_container = "#4f463d"
+on_secondary_container = "#cfb27c"
 
 # Tertiary Colors
-tertiary = "#91d7e3"
-on_tertiary = "#24273a"
-tertiary_container = "#445b6c"
-on_tertiary_container = "#93dae6"
+tertiary = "#7e9cd8"
+on_tertiary = "#1f1f28"
+tertiary_container = "#3b445c"
+on_tertiary_container = "#92b1ef"
 
 # Error Colors
-error = "#ed8796"
-on_error = "#24273a"
-error_container = "#604355"
-on_error_container = "#ffa1ad"
+error = "#c34043"
+on_error = "#1f1f28"
+error_container = "#502830"
+on_error_container = "#f9716f"
 
 # Outline Colors
-outline = "#6e738d"
-outline_variant = "#6e738d"
+outline = "#68697a"
+outline_variant = "#363646"
 
 # Special Colors
-inverse_surface = "#e3e4e8"
-inverse_on_surface = "#242528"
-inverse_primary = "#307a9c"
+inverse_surface = "#e3e3e8"
+inverse_on_surface = "#242428"
+inverse_primary = "#509933"
 
 # Utility function to convert a #rrggbb hex color to an rgba() string with transparency.
 def hex_to_rgba(hex_color, alpha):
