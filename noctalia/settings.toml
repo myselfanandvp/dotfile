@@ -218,16 +218,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/lamborghini-aventador-lunar-surface-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/lamborghini-aventador-lunar-surface-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/lamborghini-aventador-lunar-surface-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/lamborghini-aventador-lunar-surface-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/spider-man-noir-rubiks-cube-black-desktop-wallpaper-variant_1k.jpg"
 
 [widget.audio_visualizer]
 color = "secondary"
