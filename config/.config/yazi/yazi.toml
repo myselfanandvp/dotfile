@@ -1,5 +1,5 @@
 [opener]
-edit = [{ run = "kitty -e nvim %s", orphan = true, for = "unix" }]
+edit = [{ run = "ghostty -e nvim %s", orphan = true, for = "unix" }]
 play = [{ run = "mpv %s", orphan = true, for = "unix" }]
 pdf_viewer = [{ run = "zathura %s", orphan = true, for = "unix" }]
 image_viewer = [{ run = "loupe %s", orphan = true, for = "unix" }]

@@ -8,11 +8,11 @@
 --    │     Requirement Files      │
 --    ╰────────────────────────────╯
 
-require("conf.monitors")
 require("conf.autostart")
 require("conf.input")
 require("conf.appearance")
 require("conf.keybindings")
+require("conf.monitors")
 require("conf.workspaces")
 require("conf.windowrules")
 require("conf.layerrules")

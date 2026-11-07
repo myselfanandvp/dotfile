@@ -9,6 +9,7 @@ local ipc = "noctalia msg"
 local colorPicker = "~/.config/hypr/scripts/hyprpicker.sh"
 local terminal = "kitty"
 local terminal2 = "wezterm"
+local current_monitor = "eDP-1"
 
 local fileManager = "nautilus"
 
@@ -64,6 +65,28 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("~/.config/hypr/scripts/btop_toggle.s
 hl.bind(mainMod .. " + ALT + B", hl.dsp.exec_cmd("google-chrome-stable --incognito"))
 
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("~/.config/hypr/scripts/yazi.sh"))
+
+--    ╭────────────────────────────╮
+--    │     Display Management     │
+--    ╰────────────────────────────╯
+
+-- Disables mouse movement waking the screen up
+hl.config({
+	["misc.mouse_move_enables_dpms"] = false,
+	["misc.key_press_enables_dpms"] = false,
+})
+
+-- Keybinding: SUPER + O turns OFF the specific monitor defined at the top
+hl.bind("SUPER + O", function()
+	hl.timer(function()
+		hl.dispatch(hl.dsp.dpms({ monitor = current_monitor, action = "disable" }))
+	end, { timeout = 600, type = "oneshot" })
+end)
+
+-- Keybinding: SUPER + SHIFT + O turns ON the monitor safely
+hl.bind("SUPER + SHIFT + O", function()
+	hl.dispatch(hl.dsp.dpms({ monitor = current_monitor, action = "enable" }))
+end)
 
 --    ╭────────────────────────────╮
 --    │     WINDOW MANAGEMENT      │
@@ -265,8 +288,8 @@ hl.bind(mainMod .. "+S", hl.dsp.exec_cmd(ipc .. " panel-toggle control-center"))
 hl.bind(mainMod .. "+comma", hl.dsp.exec_cmd(ipc .. " settings-toggle"))
 hl.bind(mainMod .. "+period", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher /emo"))
 hl.bind(mainMod .. "+X", hl.dsp.exec_cmd(ipc .. " panel-toggle session"))
--- hl.bind(mainMod .. "+W", hl.dsp.exec_cmd(ipc .. " panel-toggle wallpaper"))
-hl.bind(mainMod .. "+W", hl.dsp.exec_cmd(ipc .. " panel-toggle noctalia/wallhaven:browser"))
+hl.bind(mainMod .. "+W", hl.dsp.exec_cmd(ipc .. " panel-toggle wallpaper"))
+-- hl.bind(mainMod .. "+W", hl.dsp.exec_cmd(ipc .. " panel-toggle noctalia/wallhaven:browser"))
 hl.bind(mainMod .. " +ALT+L", hl.dsp.exec_cmd(ipc .. " session lock"))
 hl.bind(mainMod .. "+semicolon", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher /emo"))
 hl.bind("ALT+TAB", hl.dsp.exec_cmd(ipc .. " window-switcher hold"))
