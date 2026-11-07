@@ -216,7 +216,7 @@ polkit_agent = true
 gpu_poll_seconds = 1
 
 [theme]
-builtin = "Noctalia"
+builtin = "Kanagawa"
 community_palette = "Catppuccin Mocha Blue"
 mode = "dark"
 source = "builtin"
@@ -224,7 +224,18 @@ wallpaper_scheme = "faithful"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "wezterm" ]
-    community_ids = [ "brave", "qutebrowser", "zen-browser", "telegram", "fastfetch", "zathura", "papirus-icons", "herdr", "yazi" ]
+    community_ids = [
+        "brave",
+        "qutebrowser",
+        "zen-browser",
+        "telegram",
+        "zed",
+        "fastfetch",
+        "zathura",
+        "papirus-icons",
+        "herdr",
+        "yazi"
+    ]
 
 [wallpaper]
 directory = "/home/anand/Pictures/Wallpapers"
