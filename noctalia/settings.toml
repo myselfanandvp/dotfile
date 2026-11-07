@@ -196,7 +196,7 @@ panel_placement = "floating"
 panel_position = "center"
 
 [plugins]
-enabled = [ "noctalia/notes", "jinliu/imagemagick-clock" ]
+enabled = [ "noctalia/notes", "noctalia/wallhaven" ]
 
 [shell]
 font_family = "JetBrains Mono SemiBold"
@@ -246,16 +246,16 @@ transition = [ "disc" ]
 transition_duration = 1900
 
     [wallpaper.default]
-    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/wallhaven-7jmjrv.png"
 
     [wallpaper.last]
-    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/wallhaven-7jmjrv.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/wallhaven-7jmjrv.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/anand/Pictures/Wallpapers/anime-landscape-sunrise-dramatic-clouds-desktop-wallpaper-variant_1k.jpg"
+    path = "/home/anand/Pictures/Wallpapers/wallhaven-7jmjrv.png"
 
 [widget.audio_visualizer]
 color = "secondary"
